@@ -22,3 +22,22 @@
     height: 25px;
     width: 25px;
   }
+  .descripcion_logo{
+    font-style: oblique;
+    color: black;
+}
+a :hover{
+    color: whitesmoke;
+}
+i{
+    font-size: 15px;
+}
+footer{
+    background-color: #d1dc5a;
+    justify-content: space-around;
+    
+}
+.img-footer{
+    height: 200px;
+    width: 200px;
+}
