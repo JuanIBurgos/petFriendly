@@ -1,0 +1,1 @@
+// Este archivo es el js de la página principal
