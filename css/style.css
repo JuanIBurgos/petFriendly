@@ -6,7 +6,7 @@
     width: 100%;
     position: sticky;
     top:0;
-    z-index: 9999;
+    z-index: 999;
     background-color:#d1dc5a !important;
 }
   header img {
