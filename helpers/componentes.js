@@ -1,6 +1,7 @@
-/*
- * Este metodo genera el header y lo agrega en el div <header> con id ="header"
- * Esto  para no tener que copiar y pegar el mismo componente en las diferentes vistas,
+/**
+ *Este metodo genera el header y lo agrega en el div <header> con id ="header"
+
+ *Esto  para no tener que copiar y pegar el mismo componente en las diferentes vistas,
  */
 function crearHeader() {
   let header = `
@@ -33,8 +34,9 @@ function crearHeader() {
   document.getElementById("header").innerHTML += header;
 }
 
-/*
+/**
  * Este metodo genera el footer y lo agrega en el div <footer> con id = "footer"
+ 
  * Esto  para no tener que copiar y pegar el mismo componente en las diferentes vistas,
  */
 function crearFooter() {
@@ -72,23 +74,21 @@ function crearFooter() {
   document.getElementById("footer").innerHTML += footer;
 }
 
+/**
+*para ejecutar la funcion render en cada vista para que se dibujen se debe:
+
+* 1-Llamarla en el html 
+*   <script src="/helpers/componentes.js"></script>
+*   en este caso llamo a los helpers y luego el js de la vista correspondientes
+
+* 2- tener el div contenedor del footer con el id "footer" para poder escribir dentro de el con la funcion
+*   <footer class="footer" id="footer"></footer>
+*
+* 3- tener el div contenedor del header con el id "header" para poder escribir dentro de el con la funcion
+*    <header class="header" id="header"></header>
+
+*/
 function render() {
   crearHeader();
   crearFooter();
 }
-
-render();
-
-/*
-/*para ejecutar la funcion render en cada vista para que se dibujen se debe:
-/* 1-Llamarla en el html 
-/*   <script src="/helpers/componentes.js"></script>
-/*   en este caso llamo a los helpers y luego el js de la vista correspondientes
-
-/* 2- tener el div contenedor del footer con el id "footer" para poder escribir dentro de el con la funcion
-/*   <footer class="footer" id="footer"></footer>
-/*
-/* 3- tener el div contenedor del footer con el id "header" para poder escribir dentro de el con la funcion
-/*    <header class="header" id="header"></header>
-/*
-*/
