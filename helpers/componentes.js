@@ -86,7 +86,6 @@ function crearFooter() {
 *
 * 3- tener el div contenedor del header con el id "header" para poder escribir dentro de el con la funcion
 *    <header class="header" id="header"></header>
-
 */
 function render() {
   crearHeader();
