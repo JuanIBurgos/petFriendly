@@ -4,6 +4,14 @@
 }
 
 
+
 .formulario {
-    background-color: blue;
+    background-color: var(--color-principal);
+    border-radius: 20px;
+}
+.navbar{
+background-color: var(--color-principal)!important;
+}
+body{
+    background-color: var(--color-secundario);
 }
