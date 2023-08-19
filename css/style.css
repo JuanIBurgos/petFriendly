@@ -15,7 +15,7 @@
 }
 body{
     min-height: 100vh;
-    background: var(--color-secundario);
+    background: var(--color-secundario)!important;
 }
   header img {
     height: 25px;
