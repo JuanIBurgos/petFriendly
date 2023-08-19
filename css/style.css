@@ -2,12 +2,20 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --color-principal:#d1dc5a;
+    --color-secundario:#e0f7e0;
+}
 .nav{
     width: 100%;
     position: sticky;
     top:0;
     z-index: 999;
-    background-color:#d1dc5a !important;
+    background-color:var(--color-principal) !important;
+}
+body{
+    min-height: 100vh;
+    background: var(--color-secundario);
 }
   header img {
     height: 25px;

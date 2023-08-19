@@ -1,3 +1,5 @@
+render();
+
 class User {
   constructor(name, surname, email, id, status, password) {
     this.name = name;
@@ -12,7 +14,7 @@ class User {
 createdUsers = [
   //instanciar users
   new User("jorge", "navarro", "jorge@gmail.com", 0, "admin", "123"),
-  new User("belen", "rocha", "belen@gmail.com", 1, "user", "123"),
+  new User("sol", "rocha", "sol@gmail.com", 1, "user", "123"),
 ];
 guardarUsuarios(createdUsers);
 
