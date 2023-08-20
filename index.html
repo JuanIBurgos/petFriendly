@@ -112,6 +112,34 @@
         </button>
       </div>
     </section>
+    <!-- tarjetas de pagina principal -->
+    <section class="tarjetas container-fluid py-5 row justify-content-around"></section>
+
+    <!-- formulario para agregar productos -->
+    <section>
+      <div class="conatiner bg bg-success mt-5 py-5">
+        <form class="p-5 row" id="agregar" onsubmit="agregarProducto(event)">
+            <div class="mb-3 ">
+              <label for="" class="form-label">producto</label>
+              <input type="text" class="form-control" id="product" required  aria-describedby="emailHelp">
+              
+            <div class="mb-3 ">
+              <label for="" class="form-label">ID de producto</label>
+              <input type="text" class="form-control" id="productId" required >
+            </div>
+            <div class="mb-3 ">
+                <label for="" class="form-label">descripcion</label>
+                <input type="text" class="form-control" id="descripcion" required >
+              </div>
+              <div class="mb-3 ">
+                <label for="" class="form-label">Imagen</label>
+                <input type="text" class="form-control" id="img" required >
+              </div>
+            
+            <button type="submit" class="btn btn-primary" form="agregar">agregar</button>
+          </form>
+    </div>
+    </section>
             
       
           
@@ -123,6 +151,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script> 
-    
+    <script src="./js/index.js"></script>
 </body>
 </html>

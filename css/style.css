@@ -22,3 +22,7 @@
     height: 25px;
     width: 25px;
   }
+  .imagenProducto{
+    height: 250px;
+    object-fit: cover;
+}
