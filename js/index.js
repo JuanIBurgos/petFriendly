@@ -50,3 +50,47 @@ let mostrarProducto = (product) =>{
  products.forEach(product => {
     mostrarProducto(product)
  })
+ //! eliminar productos 
+const eliminarProducto = () => {
+  const productoAeliminar = prompt('¿Qué producto desea eliminar?').toLocaleLowerCase();
+  const productoEncontrado = products.find(product => product.name.toLocaleLowerCase() === productoAeliminar);
+  if (productoEncontrado) {
+      // Elimina el producto encontrado 
+      const index = products.indexOf(productoEncontrado);
+      if (index !== -1) {
+          products.splice(index, 1);
+          alert('Producto eliminado');
+          // Llama a una función para actualizar la lista de productos 
+          actualizarListaProductos();
+      }
+  } else {
+      alert('Producto no encontrado');
+  }
+}
+//! actualizar lista de productos
+function actualizarListaProductos() {
+  const padreContainer = document.querySelector('.tarjetas'); 
+  padreContainer.innerHTML = ''; //limpia el contenedor
+
+  products.forEach(product => {
+      const newProductCard = document.createElement('div');
+      newProductCard.id = product.productId;
+      newProductCard.classList.add('card', 'm-2');
+      newProductCard.style.width = '18rem';
+      newProductCard.innerHTML = `
+          <img src=${product.imagen} class="card-img-top imagenProducto" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">${product.name}</h5>
+              <p class="card-text">${product.descrip}</p>
+              <a href="#" class="btn btn-success form-control">Ver mas</a>
+          </div>
+      `
+
+      // Agrega la tarjeta de producto al contenedor
+      padreContainer.appendChild(newProductCard);
+  });
+}
+
+
+
+
