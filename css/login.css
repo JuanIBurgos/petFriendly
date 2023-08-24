@@ -4,17 +4,6 @@
 }
 
 
-
 .formulario {
-    background-color: var(--color-principal);
-    border-radius: 20px;
-}
-
-body{
-    background-color: var(--color-secundario);
-}
-.btn{
-    background-color: var(--color-secundario)!important;
-    border: 5px;
-    border-color: black!important;
+    background-color: blue;
 }
