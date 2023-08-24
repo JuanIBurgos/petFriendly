@@ -91,3 +91,5 @@ function render() {
   crearHeader();
   crearFooter();
 }
+
+render();

@@ -1,5 +1,3 @@
-render();
-
 class User {
   constructor(name, surname, email, id, status, password) {
     this.name = name;
