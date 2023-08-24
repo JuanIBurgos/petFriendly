@@ -19,7 +19,7 @@ function crearHeader() {
               <a href="/html/login.html" class="nav-link active" aria-current="true">Login</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link active" href="#">Sobre nosotros</a>
+              <a class="nav-link active" href="/html/sobrenosotros.html">Sobre nosotros</a>
              </li>
             <li class="nav-item">
             <a class="nav-link active" aria-disabled="true">Contactos</a>
