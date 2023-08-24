@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.rasef  {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    
+}
+
+.imagenPersonaNosotros{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid #d1dc5a;
+}
+.parrafoAcercaNos{
+    text-align: center;
+}
+.h4SobreNosotros{
+    margin-top: 23vh;
+
+}
+ 
