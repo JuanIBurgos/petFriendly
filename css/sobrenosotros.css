@@ -17,6 +17,7 @@
     width: 200px;
     border-radius: 50%;
     border: 6px solid #d1dc5a;
+    object-fit: cover;
 }
 .parrafoAcercaNos{
     text-align: center;
