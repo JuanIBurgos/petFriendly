@@ -9,6 +9,7 @@ function iniciar() {
 
 function leerProductos() {
   return JSON.parse(localStorage.getItem("productos"));
+  console.log("traje los productos");
 }
 
 function agregarProductoLocalStorage(producto) {
