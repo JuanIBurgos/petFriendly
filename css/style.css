@@ -18,8 +18,8 @@ body{
     background: var(--color-secundario)!important;
 }
   header img {
-    height: 25px;
-    width: 25px;
+    height: 90px;
+    width: 90px;
   }
   .descripcion_logo{
     font-style: oblique;

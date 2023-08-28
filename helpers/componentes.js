@@ -52,7 +52,7 @@ function crearFooter() {
             <h5>Contáctanos</h5>
         <li class="fas fa-phone me-3"> 4245678</li>
         <li class="fas fa-home me-3"> Bolivar 2557, San Miguel de Tucuman</li>
-        <li class="fas fa-envelope me-3">petfriendly2023@gmail.com</li>
+        <li class="fas fa-envelope me-3"> petfriendly@gmail.com</li>
     </p>
     </div>
     <div class="col-md-4 col-lg-4 col-xl-3">
