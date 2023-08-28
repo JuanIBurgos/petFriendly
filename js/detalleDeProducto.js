@@ -1,5 +1,3 @@
-// render();
-
 function mostrarDetalleDeProducto(idProduct){
     let product = products.find(product => product.productId == idProduct);
     console.log(product);
@@ -10,7 +8,7 @@ function mostrarDetalleDeProducto(idProduct){
     // Coloco funciones de css
     // newProductCards.style.width='18rem';
     newElementDetalle.innerHTML=`
-    <h1 class="titulos text-center h1-partners">Producto de la tienda</h1>
+    <h1 class="titulos text-center">Producto de la tienda</h1>
         <hr>
     <article class="row fondo titulos">
             <!-- card con el producto -->
@@ -181,4 +179,4 @@ dadContainer.appendChild(newElementDetalle);
 
 }
 
-// mostrarDetalleDeProducto('1');
+//mostrarDetalleDeProducto('1');
