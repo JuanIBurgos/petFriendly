@@ -1,4 +1,4 @@
-// Este archivo es el js de la página principal
+
 const padreContainer = document.querySelector(".tarjetas"); //seccion de tarjetas
 const formularioEliminaProducto = document.getElementById("eliminarID"); //input donde va el id que quiero borrar
 
