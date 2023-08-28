@@ -2,9 +2,6 @@
 const padreContainer = document.querySelector(".tarjetas"); //seccion de tarjetas
 const formularioEliminaProducto = document.getElementById("eliminarID"); //input donde va el id que quiero borrar
 
-function iniciarLocalStorage() {
-  iniciar();
-}
 // //!actualiza
 function actualizarLista(arrayProductos) {
   padreContainer.innerHTML = ""; //limpia el contenedor
