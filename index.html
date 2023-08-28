@@ -1,130 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>petFriendly</title>
-    <link rel="shortcut icon" href="./asset/faviconGatoYPerro.png" type="image/x-icon">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>petFriendly</title>
+  <link rel="shortcut icon" href="./asset/faviconGatoYPerro.png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <!-- navbar -->
   <header class="header" id="header"></header>
-       <!-- Carousel para dispositivos medianos y grandes -->
-    <section>
-      <div id="carruselGrande" class="carousel slide w-100 d-none d-md-flex p-2" data-bs-ride="carousel">
-        <div class="carousel-inner w-100 ">
-          <div class="carousel-item active">
-            <div class="d-none d-md-flex justify-content-evenly">
-              <div><video src="./asset/video1.mp4" width="350px" height="500px" autoplay muted loop></video></div>
-              <div><video src="./asset/video2.mp4" width="350px" height="500px" autoplay muted loop></video></div>
-              <div><video src="./asset/video3.mp4" width="350px" height="500px" autoplay muted loop></video></div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-none d-md-flex justify-content-evenly">
-              <div><img src="./asset/img1.jpg" class="d-block" width= "350px" height="500px" alt="..."></div>
-              <div><img src="./asset/img2.jpg" class="d-block" width= "350px" height="500px" alt="..."></div>
-              <div><img src="./asset/img3.jpg" class="d-block" width= "350px" height="500px" alt="..."></div>
-            </div>
+  <!-- Carousel para dispositivos medianos y grandes -->
+  <section>
+    <div id="carruselGrande" class="carousel slide w-100 d-none d-md-flex p-2" data-bs-ride="carousel">
+      <div class="carousel-inner w-100 ">
+        <div class="carousel-item active">
+          <div class="d-none d-md-flex justify-content-evenly">
+            <div><video src="./asset/video1.mp4" width="350px" height="500px" autoplay muted loop></video></div>
+            <div><video src="./asset/video2.mp4" width="350px" height="500px" autoplay muted loop></video></div>
+            <div><video src="./asset/video3.mp4" width="350px" height="500px" autoplay muted loop></video></div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselGrande" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carruselGrande" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- Carousel para Celulares -->
-      <div id="carruselCel" class="carousel slide w-100 d-flex d-md-none " data-bs-ride="carousel">
-        <div class="carousel-inner w-100 ">
-          <div class="carousel-inner w100 d-flex d-md-none ">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center"><video src="./asset/video1.mp4" width="350px" height="500px"
-                  autoplay muted loop></video></div>
-            </div>
-            <div class="carousel-item ">
-              <div class="d-flex justify-content-center"><video src="./asset/video2.mp4" width="350px" height="500px"
-                  autoplay muted loop></video></div>
-            </div>
-            <div class="carousel-item  ">
-              <div class="d-flex justify-content-center"><video src="./asset/video3.mp4" width="350px" height="500px"
-                  autoplay muted loop></video></div>
-            </div>
-            <div class="carousel-item  ">
-              <div class="d-flex justify-content-center"><img src="./asset/img1.jpg" class="d-block" width="350px" height="500px" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="d-flex justify-content-center"><img src="./asset/img2.jpg" class="d-block" width="350px" height="500px" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="d-flex justify-content-center"><img src="./asset/img3.jpg" class="d-block" width="350px" height="500px" alt="...">
-              </div>
-            </div>
+        <div class="carousel-item">
+          <div class="d-none d-md-flex justify-content-evenly">
+            <div><img src="./asset/img1.jpg" class="d-block" width="350px" height="500px" alt="..."></div>
+            <div><img src="./asset/img2.jpg" class="d-block" width="350px" height="500px" alt="..."></div>
+            <div><img src="./asset/img3.jpg" class="d-block" width="350px" height="500px" alt="..."></div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselCel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carruselCel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
       </div>
-    </section>
-    <!-- tarjetas de pagina principal -->
-    <section class="tarjetas container-fluid py-5 row justify-content-around"></section>
-
-    <!-- formulario para agregar productos -->
-    <section>
-      <div class="conatiner bg bg-success mt-5 py-5">
-        <form class="p-5 row" id="agregar" onsubmit="agregarProducto(event)">
-            <div class="mb-3 ">
-              <label for="" class="form-label">producto</label>
-              <input type="text" class="form-control" id="product" required  aria-describedby="emailHelp">
-              
-            <div class="mb-3 ">
-              <label for="" class="form-label">ID de producto</label>
-              <input type="text" class="form-control" id="productId" required >
-            </div>
-            <div class="mb-3 ">
-                <label for="" class="form-label">descripcion</label>
-                <input type="text" class="form-control" id="descripcion" required >
-              </div>
-              <div class="mb-3 ">
-                <label for="" class="form-label">Imagen</label>
-                <input type="text" class="form-control" id="img" required >
-              </div>
-            
-            <button type="submit" class="btn btn-primary" form="agregar">agregar</button>
-          </form>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselGrande" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselGrande" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    </section>
-            
-      
-  
-
-
-
-
-
-
+    <!-- Carousel para Celulares -->
+    <div id="carruselCel" class="carousel slide w-100 d-flex d-md-none " data-bs-ride="carousel">
+      <div class="carousel-inner w-100 ">
+        <div class="carousel-inner w100 d-flex d-md-none ">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center"><video src="./asset/video1.mp4" width="350px" height="500px"
+                autoplay muted loop></video></div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center"><video src="./asset/video2.mp4" width="350px" height="500px"
+                autoplay muted loop></video></div>
+          </div>
+          <div class="carousel-item  ">
+            <div class="d-flex justify-content-center"><video src="./asset/video3.mp4" width="350px" height="500px"
+                autoplay muted loop></video></div>
+          </div>
+          <div class="carousel-item  ">
+            <div class="d-flex justify-content-center"><img src="./asset/img1.jpg" class="d-block" width="350px"
+                height="500px" alt="...">
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center"><img src="./asset/img2.jpg" class="d-block" width="350px"
+                height="500px" alt="...">
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center"><img src="./asset/img3.jpg" class="d-block" width="350px"
+                height="500px" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselCel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselCel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+  <!-- tarjetas de pagina principal -->
+  <section class="tarjetas container-fluid py-5 row justify-content-around"></section>
 
   <!-------------------------------FOOTER-------------------------------->
-<footer class="footer" id="footer"></footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script> 
+  <footer class="footer" id="footer"></footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+    <script src="/baseDeDatos/productos.js"></script>
+    <script src="/baseDeDatos/usuarios.js"></script>
+    <script src="/helpers/localstorage.js"></script>
     <script src="/helpers/componentes.js"></script>
     <script src="./js/index.js"></script>
 
 </body>
+
 </html>
