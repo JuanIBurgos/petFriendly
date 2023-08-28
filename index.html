@@ -20,109 +20,77 @@
 <body>
   <!-- navbar -->
   <header class="header" id="header"></header>
-       <!-- Carousel para dispositivos medianos y grandes -->
-    <section>
-      <div id="carruselGrande" class="carousel slide w-100 d-none d-md-flex p-2" data-bs-ride="carousel">
-        <div class="carousel-inner w-100 ">
-          <div class="carousel-item active">
-            <div class="d-none d-md-flex justify-content-evenly">
-              <div><video src="./asset/video1.mp4" width="350px" height="500px" autoplay muted loop></video></div>
-              <div><video src="./asset/video2.mp4" width="350px" height="500px" autoplay muted loop></video></div>
-              <div><video src="./asset/video3.mp4" width="350px" height="500px" autoplay muted loop></video></div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-none d-md-flex justify-content-evenly">
-              <div><img src="./asset/img1.jpg" class="d-block" width= "350px" height="500px" alt="..."></div>
-              <div><img src="./asset/img2.jpg" class="d-block" width= "350px" height="500px" alt="..."></div>
-              <div><img src="./asset/img3.jpg" class="d-block" width= "350px" height="500px" alt="..."></div>
-            </div>
+  <!-- Carousel para dispositivos medianos y grandes -->
+  <section>
+    <div id="carruselGrande" class="carousel slide w-100 d-none d-md-flex p-2" data-bs-ride="carousel">
+      <div class="carousel-inner w-100 ">
+        <div class="carousel-item active">
+          <div class="d-none d-md-flex justify-content-evenly">
+            <div><video src="./asset/video1.mp4" width="350px" height="500px" autoplay muted loop></video></div>
+            <div><video src="./asset/video2.mp4" width="350px" height="500px" autoplay muted loop></video></div>
+            <div><video src="./asset/video3.mp4" width="350px" height="500px" autoplay muted loop></video></div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselGrande" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carruselGrande" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- Carousel para Celulares -->
-      <div id="carruselCel" class="carousel slide w-100 d-flex d-md-none " data-bs-ride="carousel">
-        <div class="carousel-inner w-100 ">
-          <div class="carousel-inner w100 d-flex d-md-none ">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center"><video src="./asset/video1.mp4" width="350px" height="500px"
-                  autoplay muted loop></video></div>
-            </div>
-            <div class="carousel-item ">
-              <div class="d-flex justify-content-center"><video src="./asset/video2.mp4" width="350px" height="500px"
-                  autoplay muted loop></video></div>
-            </div>
-            <div class="carousel-item  ">
-              <div class="d-flex justify-content-center"><video src="./asset/video3.mp4" width="350px" height="500px"
-                  autoplay muted loop></video></div>
-            </div>
-            <div class="carousel-item  ">
-              <div class="d-flex justify-content-center"><img src="./asset/img1.jpg" class="d-block" width="350px" height="500px" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="d-flex justify-content-center"><img src="./asset/img2.jpg" class="d-block" width="350px" height="500px" alt="...">
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="d-flex justify-content-center"><img src="./asset/img3.jpg" class="d-block" width="350px" height="500px" alt="...">
-              </div>
-            </div>
+        <div class="carousel-item">
+          <div class="d-none d-md-flex justify-content-evenly">
+            <div><img src="./asset/img1.jpg" class="d-block" width="350px" height="500px" alt="..."></div>
+            <div><img src="./asset/img2.jpg" class="d-block" width="350px" height="500px" alt="..."></div>
+            <div><img src="./asset/img3.jpg" class="d-block" width="350px" height="500px" alt="..."></div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselCel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carruselCel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
       </div>
-    </section>
-    <!-- tarjetas de pagina principal -->
-    <section class="tarjetas container-fluid py-5 row justify-content-around"></section>
-
-    <!-- formulario para agregar productos -->
-    <section>
-      <div class="conatiner bg bg-success mt-5 py-5">
-        <form class="p-5 row" id="agregar" onsubmit="agregarProducto(event)">
-            <div class="mb-3 ">
-              <label for="" class="form-label">producto</label>
-              <input type="text" class="form-control" id="product" required  aria-describedby="emailHelp">
-              
-            <div class="mb-3 ">
-              <label for="" class="form-label">ID de producto</label>
-              <input type="text" class="form-control" id="productId" required >
-            </div>
-            <div class="mb-3 ">
-                <label for="" class="form-label">descripcion</label>
-                <input type="text" class="form-control" id="descripcion" required >
-              </div>
-              <div class="mb-3 ">
-                <label for="" class="form-label">Imagen</label>
-                <input type="text" class="form-control" id="img" required >
-              </div>
-            
-            <button type="submit" class="btn btn-primary" form="agregar">agregar</button>
-          </form>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselGrande" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselGrande" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    </section>
-            
-      
-  
-
-
-
-
-
-
+    <!-- Carousel para Celulares -->
+    <div id="carruselCel" class="carousel slide w-100 d-flex d-md-none " data-bs-ride="carousel">
+      <div class="carousel-inner w-100 ">
+        <div class="carousel-inner w100 d-flex d-md-none ">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center"><video src="./asset/video1.mp4" width="350px" height="500px"
+                autoplay muted loop></video></div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center"><video src="./asset/video2.mp4" width="350px" height="500px"
+                autoplay muted loop></video></div>
+          </div>
+          <div class="carousel-item  ">
+            <div class="d-flex justify-content-center"><video src="./asset/video3.mp4" width="350px" height="500px"
+                autoplay muted loop></video></div>
+          </div>
+          <div class="carousel-item  ">
+            <div class="d-flex justify-content-center"><img src="./asset/img1.jpg" class="d-block" width="350px"
+                height="500px" alt="...">
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center"><img src="./asset/img2.jpg" class="d-block" width="350px"
+                height="500px" alt="...">
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center"><img src="./asset/img3.jpg" class="d-block" width="350px"
+                height="500px" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselCel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselCel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+  <!-- tarjetas de pagina principal -->
+  <section class="tarjetas container-fluid py-5 row justify-content-around"></section>
 
   <!-------------------------------FOOTER-------------------------------->
   <footer class="footer" id="footer"></footer>
