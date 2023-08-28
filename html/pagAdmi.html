@@ -16,8 +16,22 @@
 
 <body>
   <header class="header" id="header"></header>
-
   <!-- formulario para agregar productos -->
+  <h1>Información de los Productos</h1>
+  <table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="listaProductos">
+    </tbody>
+</table>
+
+
   <section>
     <div class="conatiner bg bg-success mt-5 py-5">
       <form class="p-5 row" id="agregar" onsubmit="agregarProducto(event)">
@@ -40,17 +54,7 @@
 
           <button type="submit" class="btn btn-primary" form="agregar">agregar</button>
       </form>
-    </div>
-   
-    <form class="" id="eliminarForm" onsubmit="eliminarTarjeta(event)">
-      
-      <div class="mb-3">
-        <label for="" class="form-label">ID de la tarjeta a eliminar</label>
-        <input type="text" class="form-control" id="eliminarID">
-      </div>
-      <button type="submit" class="btn btn-danger" form="eliminarForm">Eliminar</button>
-    </form>
-   
+    </div>   
   </section>
 
   <footer class="footer" id="footer"></footer>
@@ -65,8 +69,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
     crossorigin="anonymous"></script>
-  <script src="/helpers/componentes.js"></script>
-  <script src="./js/index.js"></script>
+    <script src="/baseDeDatos/productos.js"></script>
+    <script src="/baseDeDatos/usuarios.js"></script>
+    <script src="/helpers/localstorage.js"></script>
+    <script src="/helpers/componentes.js"></script> 
+    <script src="/js/administracion.js"></script>
 
 
 </body>
