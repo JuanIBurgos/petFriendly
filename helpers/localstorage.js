@@ -11,6 +11,11 @@ function leerProductos() {
   return JSON.parse(localStorage.getItem("productos"));
 }
 
+function agregarProductoLocalStorage(producto) {
+  let listaProductos = leerProductos(); //obtiene los elementos
+  listaProductos.push(producto);
+  localStorage.setItem("productos", JSON.stringify(listaProductos));
+}
 function eliminarProductoLocalStorage(productoId) {
   let listaProductos = leerProductos(); //obtiene los elementos
   let productoEncontrado = listaProductos.find(
