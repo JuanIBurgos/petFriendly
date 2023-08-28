@@ -30,13 +30,40 @@
     <tbody id="listaProductos">
     </tbody>
 </table>
-
+<!-- Modal -->
+<div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Producto</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" id ="modificar" class="p-5 row" onsubmit= "modificarProducto(event)">
+          <label for="">Producto</label>
+          <input type="text" id="editProduct"> 
+          <label for="">ID de producto</label>
+          <input type="text" id="editProduct"> 
+          <label for="">Descripcion</label>
+          <input type="text" id="editDescripcion"> 
+          <label for="">Imagen</label>
+          <input type="text" id="editImg">
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Editar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <section>
     <div class="conatiner bg bg-success mt-5 py-5">
       <form class="p-5 row" id="agregar" onsubmit="agregarProducto(event)">
         <div class="mb-3 ">
-          <label for="" class="form-label">producto</label>
+          <label for="" class="form-label">Producto</label>
           <input type="text" class="form-control" id="product" required aria-describedby="emailHelp">
 
           <div class="mb-3 ">
@@ -44,7 +71,7 @@
             <input type="text" class="form-control" id="productId" required>
           </div>
           <div class="mb-3 ">
-            <label for="" class="form-label">descripcion</label>
+            <label for="" class="form-label">Descripcion</label>
             <input type="text" class="form-control" id="descripcion" required>
           </div>
           <div class="mb-3 ">
@@ -52,7 +79,7 @@
             <input type="text" class="form-control" id="img" required>
           </div>
 
-          <button type="submit" class="btn btn-primary" form="agregar">agregar</button>
+          <button type="submit" class="btn btn-primary" form="agregar">Agregar</button>
       </form>
     </div>   
   </section>
