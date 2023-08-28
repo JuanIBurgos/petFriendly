@@ -12,7 +12,7 @@ let crearFilaProducto = (producto) => {
             <td id="producto-id-${producto.productId}">${producto.productId}</td>
             <td id="producto-nombre-${producto.productId}">${producto.name}</td>
             <td id="producto-descripcion-${producto.productId}">${producto.descrip}</td>
-            <td id="producto-botones-${producto.productId}"><button onclick="eliminarProducto(${producto.productId})">Eliminar</button></td>
+            <td id="producto-botones-${producto.productId}"><button class="btn btn-danger me-1" onclick="eliminarProducto(${producto.productId})">Eliminar</button><button class="btn btn-info">Modificar</button></td>
         </tr>
     `;
 };
@@ -35,8 +35,8 @@ let agregarProducto = (event) => {
     productImg
   );
 
-  products.push(newProduct); //agrega el producto al array
-  actualizarLista(products); //actualiza las tarjetas
+  agregarProductoLocalStorage(newProduct); //agrega el producto al array
+  location.reload(); //actualiza las tarjetas
 };
 
 crearListaProductosAdmin();
