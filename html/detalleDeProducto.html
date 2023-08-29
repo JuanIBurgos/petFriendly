@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del producto</title>
+    <link rel="shortcut icon" href="./asset/faviconGatoYPerro.png" type="image/x-icon">
+
+    <!-- Link de las fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Noto+Serif:wght@500&display=swap" rel="stylesheet">
+   
+    <!-- link de los icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+     
+    <!--Link de font awesome  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/puntuacion.css">
+    <link rel="stylesheet" href="../css/detalleDeProducto.css">
+
+    <!-- Link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header class="header" id="header"></header>
+
+    <main class="fondo">
+        <div id="idDetalleDeProducto">
+        
+        </div>
+
+        <section>
+            <h3 class="titulos text-center mt-3 ">COMENTARIOS</h3>
+            <form action="" class="container mb-3">
+                    <span class="fa fa-star start" id="1star" onclick="calificar(this)"> </span>
+                    <span class="fa fa-star start" id="2star" onclick="calificar(this)"> </span>
+                    <span class="fa fa-star start" id="3star" onclick="calificar(this)"> </span>
+                    <span class="fa fa-star start" id="4star" onclick="calificar(this)"> </span>
+                    <span class="fa fa-star start" id="5star" onclick="calificar(this)"> </span>
+            
+                    <textarea name="" id="idComentario" cols="30" rows="5" class="form-control my-2"></textarea>
+            <!-- Al boton le coloco el escuchador de evento -->
+                    <button class="btn btn-success d-block ms-auto" onclick="publlicar(event)">Enviar</button>
+            </form>
+        <!-- creo el elemento que va a crear -->
+        <div class="contenedorComentario">
+    
+        </div>
+        <!-- creo el elemento de los comentarios en localStorage-->
+        <div class="contenedorComentarioViejo">
+    
+        </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+    
+    
+<!-- Link de script de js -->
+    
+     <script src="/baseDeDatos/productos.js"></script>
+     <script src="/baseDeDatos/usuarios.js"></script>
+     <script src="../helpers/componentes.js"></script>
+     <script src="../helpers/localstorage.js"></script>
+     <script src="../js/detalleDeProducto.js"></script>
+     <script src="../js/puntuacion_v01.js"></script>
+    
+
+<!-- Link de bootstrap -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+</body>
+</html>
