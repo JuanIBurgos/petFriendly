@@ -29,7 +29,7 @@ function publlicar(event){
         if(i<contador){
             aux=aux+'<i class="bi bi-star-fill cambiarColor"></i> ';
         }else{
-            aux=aux+'<i class="bi bi-star cambiarColor"></i> ';
+            aux=aux+'<i class="bi bi-star"></i> ';
         }
     }
     
