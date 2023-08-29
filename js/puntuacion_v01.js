@@ -27,9 +27,9 @@ function publlicar(event){
     let aux="";
     for(let i=0;i<5;i++){
         if(i<contador){
-            aux=aux+'<i class="bi bi-star-fill"></i> ';
+            aux=aux+'<i class="bi bi-star-fill cambiarColor"></i> ';
         }else{
-            aux=aux+'<i class="bi bi-star"></i> ';
+            aux=aux+'<i class="bi bi-star cambiarColor"></i> ';
         }
     }
     
