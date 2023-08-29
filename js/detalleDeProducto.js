@@ -1,11 +1,11 @@
 let arregloProductos = leerProductos();
-console.log(arregloProductos);
+
 
 function mostrarDetalleDeProducto(idProduct){
-    //let product = products.find(product => product.productId == idProduct);
+
     
     let productoEncontrado = arregloProductos.find((producto)=>producto.productId === idProduct);    
-    console.log(productoEncontrado);
+    
     // Creamos el elemento 
     const newElementDetalle = document.createElement('div');
     // Agregamos la información la clase 
