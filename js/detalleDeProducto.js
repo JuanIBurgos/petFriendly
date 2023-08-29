@@ -24,7 +24,7 @@ function mostrarDetalleDeProducto(idProduct){
                                 <div id="idCarruselProducto" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner mx-2">
                                         <div class="carousel-item active">
-                                            <img src=${productoEncontrado.imagen} alt=${productoEncontrado.name}} class="card card-img-top">
+                                            <img src=${productoEncontrado.imagen} alt=${productoEncontrado.name}} class="d-block w-100 img-fluid rounded-start">
                                         </div>
                                         <div class="carousel-item">
                                             <img src=${productoEncontrado.imagen} alt=${productoEncontrado.name}} class="d-block w-100 img-fluid rounded-start">
