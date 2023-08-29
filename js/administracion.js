@@ -17,7 +17,7 @@ let crearFilaProducto = (producto) => {
             <td id="producto-id-${producto.productId}">${producto.productId}</td>
             <td id="producto-nombre-${producto.productId}">${producto.name}</td>
             <td id="producto-descripcion-${producto.productId}">${producto.descrip}</td>
-            <td id="producto-botones-${producto.productId}"><button class="btn btn-danger me-1" onclick="eliminarProducto(${producto.productId})">Eliminar🗑️</button><button class="btn btn-info" id ="${product.productId}" data-bs-toggle="modal" data-bs-target="#idModal" >Editar ✏️</button></td>
+            <td id="producto-botones-${producto.productId}"><button class="btn btn-danger me-1" onclick="eliminarProducto(${producto.productId})">Eliminar🗑️</button><button class="btn btn-info" id ="${producto.productId}" data-bs-toggle="modal" data-bs-target="#idModal" onclick ="llenarFormulario(${producto})">Editar ✏️</button></td>
         </tr>
     `;
 };
@@ -48,7 +48,16 @@ let agregarProducto = (event) => {
 crearListaProductosAdmin();
 
 //! editar tarjetas
-  function modificarProducto() {
+// intento de rellenar las tarjetas
+
+// function llenarFormulario(producto){
+//       editarproduct.value = producto.name;
+//       editarproductId.value= producto.productId;
+//       editardescripcion.value= producto.descrip;
+//       editarimg.value = producto.imagen;
+
+// }
+  function modificarProducto(event) {
     event.preventDefault();
     const modificarProduct = new product(
       editarproduct.value,
