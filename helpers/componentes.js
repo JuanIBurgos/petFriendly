@@ -27,7 +27,7 @@ function crearHeader() {
         </ul>
         <form class="d-flex" role="search">
         <input class="form-control me-2"  type="search" placeholder="¿Que estas buscando?" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">buscar</button>
+        <a href="../html/error404.html" class="btn btn-outline-success">Buscar</a>
         </form>
         </div>
     </nav>`;
