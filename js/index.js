@@ -25,3 +25,9 @@ function actualizarLista(arrayProductos) {
 }
 
 actualizarLista(leerProductos()); //cada vez que se recargue la pagina se actualice la lista (solo con el array original de 8 productos)
+
+
+
+
+
+

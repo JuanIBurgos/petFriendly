@@ -13,12 +13,15 @@ let crearListaProductosAdmin = () => {
 
 let crearFilaProducto = (producto) => {
   return `
+  
         <tr>
             <td id="producto-id-${producto.productId}">${producto.productId}</td>
             <td id="producto-nombre-${producto.productId}">${producto.name}</td>
             <td id="producto-descripcion-${producto.productId}">${producto.descrip}</td>
-            <td id="producto-botones-${producto.productId}"><button class="btn btn-danger me-1" onclick="eliminarProducto(${producto.productId})">Eliminar🗑️</button><button class="btn btn-info" id ="${producto.productId}" data-bs-toggle="modal" data-bs-target="#idModal" onclick ="llenarFormulario(${producto})">Editar ✏️</button></td>
+            <td id="producto-botones-${producto.productId}"><button class="btn btn-danger me-1" onclick="eliminarProducto(${producto.productId})">Eliminar🗑️</button>
+            <button class="btn btn-info" id ="${producto.productId}" data-bs-toggle="modal" data-bs-target="#idModal" onclick ="llenarFormulario(${producto})">Editar ✏️</button></td>
         </tr>
+
     `;
 };
 
@@ -57,17 +60,18 @@ crearListaProductosAdmin();
 //       editarimg.value = producto.imagen;
 
 // }
-  function modificarProducto(event) {
-    event.preventDefault();
-    const modificarProduct = new product(
-      editarproduct.value,
-      editarproductId.value,
-      editardescripcion.value,
-      editarimg.value
-     )
-     const arrayProductos = leerProductos();
-     arrayProductos.splice ( parseInt(modificarProduct.productId) -1, 1, modificarProduct); 
-     localStorage.setItem("productos", JSON.stringify(arrayProductos));
-     location.reload()
-   
-    }
+
+   function modificarProducto(event) {
+     event.preventDefault();
+     const modificarProduct = new product(
+       editarproduct.value,
+       editarproductId.value,
+       editardescripcion.value,
+       editarimg.value
+      )
+      const arrayProductos = leerProductos();
+      arrayProductos.splice ( parseInt(modificarProduct.productId) -1, 1, modificarProduct); 
+      localStorage.setItem("productos", JSON.stringify(arrayProductos));
+      location.reload()
+
+     }
