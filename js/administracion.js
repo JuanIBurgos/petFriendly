@@ -14,13 +14,6 @@ let crearFilaProducto = (producto) => {
             <td id="producto-id-${producto.productId}">${producto.productId}</td>
             <td id="producto-nombre-${producto.productId}">${producto.name}</td>
             <td id="producto-descripcion-${producto.productId}">${producto.descrip}</td>
-<<<<<<< HEAD
-            <td id="producto-botones-${producto.productId}"><button class="btn btn-danger me-1" onclick="eliminarProducto(${producto.productId})">Eliminar🗑️</button>
-            <button class="btn btn-info" id ="${producto.productId}" data-bs-toggle="modal" data-bs-target="#idModal" onclick ="llenarFormulario(${producto})">Editar ✏️</button></td>
-        </tr>
-
-    `;
-=======
             <td id="producto-stock-${producto.productId}">${producto.stock}</td>
             <td id="producto-precio-${producto.productId}">$${producto.precio}</td>
             <td id="producto-botones-${producto.productId}">
@@ -29,7 +22,6 @@ let crearFilaProducto = (producto) => {
             </td>
         </tr>
    `;
->>>>>>> 264fb35cec7691daf3072f06e11f3e1b34a7c522
 };
 
 let eliminarProducto = (productId) => {
@@ -74,24 +66,6 @@ function modificarProducto(producto) {
   agregarModificarProductos(modificarProduct);
 }
 
-<<<<<<< HEAD
-// }
-
-   function modificarProducto(event) {
-     event.preventDefault();
-     const modificarProduct = new product(
-       editarproduct.value,
-       editarproductId.value,
-       editardescripcion.value,
-       editarimg.value
-      )
-      const arrayProductos = leerProductos();
-      arrayProductos.splice ( parseInt(modificarProduct.productId) -1, 1, modificarProduct); 
-      localStorage.setItem("productos", JSON.stringify(arrayProductos));
-      location.reload()
-
-     }
-=======
 const productoModal = document.getElementById("idModal");
 if (productoModal) {
   // Boton que activa el modal
@@ -137,4 +111,3 @@ if (productoModal) {
     }
   });
 }
->>>>>>> 264fb35cec7691daf3072f06e11f3e1b34a7c522
