@@ -12,7 +12,7 @@ Para utilizar el proyecto es necesaria una conexion a internet para ingresar a l
 ## Herramientas Utilizadas
 * BootsTrap
 * Visual Studio Code
-* Photoshop
+* Canva
 
 ## Autores
 * Burgos Juan
