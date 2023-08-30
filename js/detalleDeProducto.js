@@ -51,7 +51,7 @@ function mostrarDetalleDeProducto(idProduct){
                 <div class="col-lg-3 col-md-4 col-sm-12 col-12 ">
                     <div class="mt-4 mb-3 titulos text-center">
                         <h4><b> ${productoEncontrado.name} </b><br> ${productoEncontrado.productId}</h4>
-                        <h4 class="mt-3 mt-3 text-warning">$56000</h4>
+                        <h4 class="mt-3 mt-3 text-warning">$ ${productoEncontrado.precio}</h4>
 
                         <a href="../html/error404.html" class="text-white text-decoration-none"><button type="button" class="btn btn-outline-success detalleBotonPago">COMPRAR AHORA</button></a>
                         <a href="../html/error404.html" class="text-white text-decoration-none"><button type="button" class="btn btn-outline-success detalleBotonPago">AGREGAR AL CARRITO</button></a>
