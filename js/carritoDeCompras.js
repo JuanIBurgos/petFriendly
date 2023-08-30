@@ -50,5 +50,5 @@ function renderCarritoDeCompras()
         });
     }
 }
-// sumarACarrito(2);
-renderCarritoDeCompras();
+sumarACarrito(2);
+//renderCarritoDeCompras();
