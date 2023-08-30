@@ -1,4 +1,5 @@
 let arregloProductos = leerProductos();
+const productoAMostrar = JSON.parse(localStorage.getItem("productoAMostrar"));
 
 
 function mostrarDetalleDeProducto(idProduct){
@@ -101,4 +102,4 @@ dadContainer.appendChild(newElementDetalle);
 
 }
 
-mostrarDetalleDeProducto(3);
+mostrarDetalleDeProducto(productoAMostrar);
