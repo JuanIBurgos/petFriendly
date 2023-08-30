@@ -33,7 +33,7 @@ i{
 }
 footer{
     background-color: #d1dc5a;
-    justify-content: space-around;
+    justify-content: space-around !important;
     bottom: 0;
     position: static;
     width: 100%;

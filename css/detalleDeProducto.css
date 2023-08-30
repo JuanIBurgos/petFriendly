@@ -13,7 +13,11 @@
 .titulos {
     font-family: 'Alegreya', serif;
     font-family: 'Noto Serif', serif;
+<<<<<<< HEAD
     color: #198754;
+=======
+    color: success;
+>>>>>>> 99310a8d92e4593507d908b61da129f2eff67696
 }
 
 

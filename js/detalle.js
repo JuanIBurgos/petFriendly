@@ -1,5 +1,5 @@
 class Product {
-    constructor(id, name ,price, category, image, description, stock){
+    constructor(productId, name ,price, category, image, description, stock){
         this.id = productId;
         this.name= name;
         this.price= price;
@@ -23,3 +23,7 @@ let products = [
     new Product('canil7483', 'Canil n°2', $15230,'Transportadores', 'https://leocan.com.ar/wp-content/uploads/2023/06/D_NQ_NP_678832-MLA45210504888_032021-O.webp','canil pratiko metal n°2', 5),
     new Product('cani4782', 'Canil Gipsy n°1', $6130,'Transportadores', 'https://http2.mlstatic.com/D_NQ_NP_948913-MLU69805127350_062023-O.webp','canil gipsy n°1 36x36x25', 5),
 ]
+
+
+  
+  

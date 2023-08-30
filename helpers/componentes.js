@@ -22,11 +22,11 @@ function crearHeader() {
               <a class="nav-link active" href="/html/sobrenosotros.html">Sobre nosotros</a>
              </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-disabled="true">Contactos</a>
+            <a class="nav-link active" href="/html/carritoDeCompras.html" aria-disabled="true">Carrito</a>
              </li>
         </ul>
         <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+        <input class="form-control me-2"  type="search" placeholder="¿Que estas buscando?" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">buscar</button>
         </form>
         </div>
@@ -41,22 +41,21 @@ function crearHeader() {
  */
 function crearFooter() {
   let footer = `
-    <div class="row container-fluid pt-5 d-flex justify-content-around">       
-    <div class="col-md-4 col-lg-4 col-xl-3">
+    <div class="container-fluid pt-5 row justify-content-around">       
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3 text-center">
         <img src="../asset/asset.navbar/Mi proyecto.png" class="img-footer border border-success border border-3" alt="Logo del Blog">
         <h5 class="text-start fw-bold"></h5>
         <p class="descripcion_logo">Al servicio de sus patitas</p>
     </div>
-    <div class="col-md-4 col-lg-4 col-xl-3">
-        <p>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
             <h5>Contáctanos</h5>
+      <ul class = "list-unstyled">      
         <li class="fas fa-phone me-3"> 4245678</li>
         <li class="fas fa-home me-3"> Bolivar 2557, San Miguel de Tucuman</li>
         <li class="fas fa-envelope me-3"> petfriendly@gmail.com</li>
-    </p>
+      </ul>
     </div>
-    <div class="col-md-4 col-lg-4 col-xl-3">
-        <div class="text-center">
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
         <h5>Nuestras redes sociales</h5>
        <ul class="list-unstyled list-inline">
         <li class="list-inline-item">
@@ -93,3 +92,5 @@ function render() {
 }
 
 render();
+
+
