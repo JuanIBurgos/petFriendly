@@ -7,7 +7,7 @@ Para utilizar el proyecto es necesaria una conexion a internet para ingresar a l
 ## Instalacion
 1. Abrir una carpeta donde quiera duplicar el proyecto
 2. Clonar proyecto o descargarlo de [aquí](https://github.com/JuanIBurgos/petFriendly/archive/refs/heads/develop.zip)
-3. Para ejecutar el index de la carpeta raíz con live server utilizando VSCODE
+3. Para ejecutar, al index de la carpeta raíz ejecutarlo con live server utilizando VSCODE
 
 ## Herramientas Utilizadas
 * BootsTrap
