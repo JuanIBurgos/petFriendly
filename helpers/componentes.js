@@ -22,7 +22,7 @@ function crearHeader() {
               <a class="nav-link active" href="/html/sobrenosotros.html">Sobre nosotros</a>
              </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-disabled="true">Contactos</a>
+            <a class="nav-link active" href="/html/carritoDeCompras.html" aria-disabled="true">Carrito</a>
              </li>
         </ul>
         <form class="d-flex" role="search">
