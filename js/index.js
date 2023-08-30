@@ -18,7 +18,7 @@ function actualizarLista(arrayProductos) {
          <h5 class="card-title"> ${product.name} </h5>
          <p class="card-text"> ${product.descrip} </p>
          <button class="btn btn-success form-control my-2" onclick="redireccionsTarjeta(${product.productId})">Ver mas </button>
-         <button class="btn btn-success form-control" onclick="">Agregar a carrito </button>
+         <button class="btn btn-success form-control" onclick="sumarACarrito(${product.productId})">Agregar a carrito </button>
          </div>`;
       padreContainer.appendChild(newProductCard);
     }
